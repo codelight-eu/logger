@@ -3,10 +3,7 @@ A PHP log wrapper for sending logs to logging system.
 
 ## Installing
 
-```bash
-composer require codelight/logger dev-master
-```
-Add below repository in your `composer.json`.
+Add below repositories in your `composer.json`.
 
 ```json
 {
