@@ -2,7 +2,7 @@
 A PHP log wrapper for sending logs to logging system.
 
 ```bash
-composer require codelight-eu/logger
+composer require codelight/logger
 ```
 
 ## Installing

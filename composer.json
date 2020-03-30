@@ -2,6 +2,7 @@
     "name": "codelight/logger",
     "description": "A PHP log wrapper for sending logs to logging system.",
     "type": "library",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Mostafa Soufi",
