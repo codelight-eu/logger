@@ -1,0 +1,16 @@
+{
+    "name": "codelight/logger",
+    "description": "A PHP log wrapper for sending logs to logging system.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Mostafa Soufi",
+            "email": "mostafa.soufi@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Codelight\\": "src/"
+        }
+    }
+}

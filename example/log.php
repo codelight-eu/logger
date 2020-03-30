@@ -1,13 +1,3 @@
-# logger
-A PHP log wrapper for sending logs to logging system.
-
-```bash
-composer require codelight-eu/logger
-```
-
-## Installing
-
-```php
 <?php
 include "../vendor/autoload.php";
 
@@ -30,4 +20,4 @@ try {
 } catch (Exception $e) {
     echo $e->getMessage();
 }
-```
+
