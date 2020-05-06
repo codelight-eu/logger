@@ -39,10 +39,13 @@ try {
 
     $logger = new Logger(new GrayLog('logs.codelight.eu'));
 
-    $logger->setVersion(1);
-    $logger->setHost('localhost');
-    $logger->setLevel(1);
-    $logger->setUserId(12);
+    $logger->setVersion(1)
+        ->setHost('localhost')
+        ->setLevel(1)
+        ->setUserId(12)
+        ->setPayload('some_info', 'foo')
+        ->setPayload('some_env_var', 'bar')
+        ->setPayload('some_array_data', ['foo' => 'bar']);
 
     $result = $logger->log('Hello', 'Hello world! this is a log');
 

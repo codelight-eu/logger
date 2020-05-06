@@ -40,34 +40,53 @@ class GrayLog extends ServiceAbstract implements LoggerService
 
     /**
      * @param $version
+     * @return GrayLog
      */
     public function setVersion($version)
     {
         $this->data['version'] = $version;
+        return $this;
     }
 
     /**
      * @param $host
+     * @return GrayLog
      */
     public function setHost($host)
     {
         $this->data['host'] = $host;
+        return $this;
     }
 
     /**
      * @param $level
+     * @return GrayLog
      */
     public function setLevel($level)
     {
         $this->data['level'] = $level;
+        return $this;
     }
 
     /**
      * @param $userId
+     * @return GrayLog
      */
     public function setUserId($userId)
     {
         $this->data['_user_id'] = $userId;
+        return $this;
+    }
+
+    /**
+     * @param $key
+     * @param $value
+     * @return $this
+     */
+    public function setPayload($key, $value)
+    {
+        $this->data['_' . $key] = $value;
+        return $this;
     }
 
     /**
