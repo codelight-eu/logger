@@ -23,7 +23,7 @@ class GrayLog extends ServiceAbstract implements LoggerService
     /**
      * @var int
      */
-    private $data;
+    protected $data;
 
     /**
      * GrayLog constructor.
@@ -99,14 +99,14 @@ class GrayLog extends ServiceAbstract implements LoggerService
 
     /**
      * @param $message
-     * @param $fullMessage
+     * @param $context
      * @return bool|mixed|string
      * @throws Exception
      */
-    public function log($message, $fullMessage)
+    public function log($message, $context)
     {
         $this->data['short_message'] = $message;
-        $this->data['full_message'] = $fullMessage;
+        $this->data['full_message'] = $context;
 
         return $this->makeRequest(
             $this->address,

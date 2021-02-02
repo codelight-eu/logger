@@ -6,8 +6,8 @@ interface LoggerService
 {
     /**
      * @param $message
-     * @param $fullMessage
+     * @param $context
      * @return mixed
      */
-    public function log($message, $fullMessage);
+    public function log($message, $context);
 }

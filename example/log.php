@@ -6,6 +6,7 @@ use Codelight\Service\GrayLog;
 
 try {
 
+    /** @var GrayLog $logger */
     $logger = new Logger(new GrayLog('logs.codelight.eu'));
 
     $logger->setVersion(1)
