@@ -43,9 +43,7 @@ abstract class ServiceAbstract
 
         $response     = curl_exec($curl);
         $responseCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-
-        echo '<pre>' . print_r($responseCode, 1) . '</pre>';
-
+        
         if ($responseCode != 200 and $responseCode != 202) {
             throw new Exception("Log server failed with response code {$responseCode}");
         }
